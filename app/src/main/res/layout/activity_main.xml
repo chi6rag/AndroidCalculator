@@ -1,0 +1,396 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/calculator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#000" >
+
+    <LinearLayout
+        android:id="@+id/mainDisplay"
+        android:orientation="horizontal"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="3"
+        android:background="#000" >
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="x"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/keyboard"
+        android:orientation="horizontal"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="7"
+        android:background="#000"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp" >
+
+        <!-- scientificKeyboardOne-->
+        <LinearLayout
+            android:id="@+id/scientificKeyboardOne"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:orientation="vertical"
+            android:layout_marginRight="2dp" >
+
+            <Button
+                android:text="sin"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="#272727"
+                android:layout_marginBottom="2dp"
+                android:textColor="#fff" />
+
+            <Button
+                android:text="cos"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="#272727"
+                android:layout_marginBottom="2dp"
+                android:textColor="#fff" />
+
+            <Button
+                android:text="tan"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="#272727"
+                android:layout_marginBottom="2dp"
+                android:textColor="#fff" />
+
+            <Button
+                android:text="pi"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="#272727"
+                android:layout_marginBottom="2dp"
+                android:textColor="#fff" />
+
+            <Button
+                android:text="!"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="#272727"
+                android:layout_marginBottom="2dp"
+                android:textColor="#fff" />
+
+        </LinearLayout>
+        <!-- /scientificKeyboardOne -->
+
+        <!-- scientificKeyboardTwo -->
+        <LinearLayout
+            android:id="@+id/scientificKeyboardTwo"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:orientation="vertical"
+            android:layout_marginRight="30dp" >
+
+            <Button
+                android:text="ln"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="#272727"
+                android:layout_marginBottom="2dp"
+                android:textColor="#fff" />
+
+            <Button
+                android:text="log"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="#272727"
+                android:layout_marginBottom="2dp"
+                android:textColor="#fff" />
+
+            <Button
+                android:text="e"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="#272727"
+                android:layout_marginBottom="2dp"
+                android:textColor="#fff" />
+
+            <Button
+                android:text="^"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="#272727"
+                android:layout_marginBottom="2dp"
+                android:textColor="#fff" />
+
+            <Button
+                android:text="sq-root"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="#272727"
+                android:layout_marginBottom="2dp"
+                android:textColor="#fff" />
+
+        </LinearLayout>
+        <!-- /scientificKeyboardTwo -->
+
+        <LinearLayout
+            android:id="@+id/standardKeyboard"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="21"
+            android:background="#e74c3c"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/standardKeyboardRowOne"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:background="#3498db"
+                android:orientation="horizontal">
+
+                <Button
+                    android:text="7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginRight="2dp"
+                    android:textColor="#fff"
+                    android:background="#494949" />
+
+                <Button
+                    android:text="7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginRight="2dp"
+                    android:textColor="#fff"
+                    android:background="#494949" />
+
+                <Button
+                    android:text="7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginRight="2dp"
+                    android:textColor="#fff"
+                    android:background="#494949" />
+
+                <Button
+                    android:text="7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginRight="2dp"
+                    android:textColor="#fff"
+                    android:background="#494949" />
+
+                <Button
+                    android:text="7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginRight="2dp"
+                    android:textColor="#fff"
+                    android:background="#494949" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/standardKeyboardRowTwo"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:background="#f39c12"
+                android:orientation="horizontal">
+
+                <Button
+                    android:text="7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginRight="2dp"
+                    android:textColor="#fff"
+                    android:background="#494949" />
+
+                <Button
+                    android:text="7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginRight="2dp"
+                    android:textColor="#fff"
+                    android:background="#494949" />
+
+                <Button
+                    android:text="7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginRight="2dp"
+                    android:textColor="#fff"
+                    android:background="#494949" />
+
+                <Button
+                    android:text="7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginRight="2dp"
+                    android:textColor="#fff"
+                    android:background="#494949" />
+
+                <Button
+                    android:text="7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginRight="2dp"
+                    android:textColor="#fff"
+                    android:background="#494949" />
+
+            </LinearLayout>
+
+            <!-- standardKeyboard_RowThreeFourWrapper -->
+            <LinearLayout
+                android:id="@+id/standardKeyboard_RowThreeFourWrapper"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:background="#2c3e50" >
+
+                <!-- standardKeyboardRowThreeFour -->
+                <LinearLayout
+                    android:id="@+id/standardKeyboardRowThreeFour"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:orientation="vertical" >
+
+                    <!-- standardKeyboardRowThree -->
+                    <LinearLayout
+                        android:id="@+id/standardKeyboardRowThree"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            android:text="A"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_width="0dp" />
+
+                        <Button
+                            android:text="A"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_width="0dp" />
+
+                        <Button
+                            android:text="A"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_width="0dp" />
+
+                        <Button
+                            android:text="A"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_width="0dp" />
+
+                    </LinearLayout>
+                    <!-- standardKeyboardRowThree -->
+
+                    <!-- standardKeyboardRowFour -->
+                    <LinearLayout
+                        android:id="@+id/standardKeyboardRowFour"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:id="@+id/button_zero"
+                            android:layout_height="wrap_content"
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:orientation="horizontal" >
+
+                            <Button
+                                android:text="0"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:layout_width="0dp" />
+
+                        </LinearLayout>
+
+                        <Button
+                            android:text="A"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_width="0dp" />
+
+                        <Button
+                            android:text="A"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_width="0dp" />
+
+                    </LinearLayout>
+                    <!-- standardKeyboardRowFour -->
+
+                </LinearLayout>
+                <!-- standardKeyboardRowThreeFour -->
+
+                <LinearLayout
+                    android:id="@+id/equals_to_wrapper"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="#f1c40f" >
+
+                    <Button
+                        android:text="="
+                        android:id="@+id/button_equals_to"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <!-- /standardKeyboard_RowThreeFourWrapper -->
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

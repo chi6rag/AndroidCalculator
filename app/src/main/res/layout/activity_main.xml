@@ -158,7 +158,6 @@
             android:layout_height="match_parent"
             android:layout_width="0dp"
             android:layout_weight="21"
-            android:background="#e74c3c"
             android:orientation="vertical">
 
             <LinearLayout
@@ -166,7 +165,6 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:layout_width="match_parent"
-                android:background="#3498db"
                 android:orientation="horizontal">
 
                 <Button
@@ -180,7 +178,7 @@
                     android:background="#494949" />
 
                 <Button
-                    android:text="7"
+                    android:text="8"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -190,7 +188,7 @@
                     android:background="#494949" />
 
                 <Button
-                    android:text="7"
+                    android:text="9"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -200,7 +198,7 @@
                     android:background="#494949" />
 
                 <Button
-                    android:text="7"
+                    android:text="÷"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -210,7 +208,7 @@
                     android:background="#494949" />
 
                 <Button
-                    android:text="7"
+                    android:text=")"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -226,11 +224,10 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:layout_width="match_parent"
-                android:background="#f39c12"
                 android:orientation="horizontal">
 
                 <Button
-                    android:text="7"
+                    android:text="4"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -240,7 +237,7 @@
                     android:background="#494949" />
 
                 <Button
-                    android:text="7"
+                    android:text="5"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -250,7 +247,7 @@
                     android:background="#494949" />
 
                 <Button
-                    android:text="7"
+                    android:text="6"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -260,7 +257,7 @@
                     android:background="#494949" />
 
                 <Button
-                    android:text="7"
+                    android:text="X"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -270,7 +267,7 @@
                     android:background="#494949" />
 
                 <Button
-                    android:text="7"
+                    android:text="("
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -287,8 +284,7 @@
                 android:layout_height="0dp"
                 android:layout_weight="2"
                 android:layout_width="match_parent"
-                android:orientation="horizontal"
-                android:background="#2c3e50" >
+                android:orientation="horizontal" >
 
                 <!-- standardKeyboardRowThreeFour -->
                 <LinearLayout
@@ -306,28 +302,44 @@
                         android:orientation="horizontal" >
 
                         <Button
-                            android:text="A"
-                            android:layout_weight="1"
+                            android:text="1"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_width="0dp" />
+                            android:layout_weight="1"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginRight="2dp"
+                            android:textColor="#fff"
+                            android:background="#494949" />
 
                         <Button
-                            android:text="A"
-                            android:layout_weight="1"
+                            android:text="2"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_width="0dp" />
+                            android:layout_weight="1"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginRight="2dp"
+                            android:textColor="#fff"
+                            android:background="#494949" />
 
                         <Button
-                            android:text="A"
-                            android:layout_weight="1"
+                            android:text="3"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_width="0dp" />
+                            android:layout_weight="1"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginRight="2dp"
+                            android:textColor="#fff"
+                            android:background="#494949" />
 
                         <Button
-                            android:text="A"
-                            android:layout_weight="1"
+                            android:text="-"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_width="0dp" />
+                            android:layout_weight="1"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginRight="2dp"
+                            android:textColor="#fff"
+                            android:background="#494949" />
 
                     </LinearLayout>
                     <!-- standardKeyboardRowThree -->
@@ -348,23 +360,36 @@
 
                             <Button
                                 android:text="0"
-                                android:layout_weight="1"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_width="0dp" />
+                                android:layout_marginBottom="2dp"
+                                android:layout_marginRight="0dp"
+                                android:textColor="#fff"
+                                android:background="#494949" />
 
                         </LinearLayout>
 
                         <Button
-                            android:text="A"
-                            android:layout_weight="1"
+                            android:text="."
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_width="0dp" />
+                            android:layout_weight="1"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="0dp"
+                            android:textColor="#fff"
+                            android:background="#494949" />
 
                         <Button
-                            android:text="A"
-                            android:layout_weight="1"
+                            android:text="+"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_width="0dp" />
+                            android:layout_weight="1"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:textColor="#fff"
+                            android:background="#494949" />
 
                     </LinearLayout>
                     <!-- standardKeyboardRowFour -->
@@ -376,14 +401,17 @@
                     android:id="@+id/equals_to_wrapper"
                     android:layout_height="match_parent"
                     android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:background="#f1c40f" >
+                    android:layout_weight="1" >
 
                     <Button
                         android:text="="
                         android:id="@+id/button_equals_to"
+                        android:layout_height="match_parent"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent" />
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:background="#494949"
+                        android:textColor="#fff" />
 
                 </LinearLayout>
 

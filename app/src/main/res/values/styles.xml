@@ -5,4 +5,16 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="holoDark">
+        <item name="android:textColor">#fff</item>
+        <item name="android:background">#444</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+
+    <style name="holoNightly">
+        <item name="android:textColor">#fff</item>
+        <item name="android:background">#2b2b2b</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+
 </resources>

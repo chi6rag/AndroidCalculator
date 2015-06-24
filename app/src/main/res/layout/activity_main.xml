@@ -8,6 +8,7 @@
     android:orientation="vertical"
     android:background="#000" >
 
+    <!-- mainDisplay -->
     <LinearLayout
         android:id="@+id/mainDisplay"
         android:orientation="horizontal"
@@ -27,6 +28,7 @@
             android:layout_width="wrap_content" />
 
     </LinearLayout>
+    <!-- mainDisplay -->
 
     <LinearLayout
         android:id="@+id/keyboard"
@@ -174,8 +176,7 @@
                     android:layout_weight="1"
                     android:layout_marginBottom="2dp"
                     android:layout_marginRight="2dp"
-                    android:textColor="#fff"
-                    android:background="#494949" />
+                    style="@style/holoDark" />
 
                 <Button
                     android:text="8"
@@ -184,8 +185,7 @@
                     android:layout_weight="1"
                     android:layout_marginBottom="2dp"
                     android:layout_marginRight="2dp"
-                    android:textColor="#fff"
-                    android:background="#494949" />
+                    style="@style/holoDark" />
 
                 <Button
                     android:text="9"
@@ -194,8 +194,7 @@
                     android:layout_weight="1"
                     android:layout_marginBottom="2dp"
                     android:layout_marginRight="2dp"
-                    android:textColor="#fff"
-                    android:background="#494949" />
+                    style="@style/holoDark" />
 
                 <Button
                     android:text="÷"
@@ -204,8 +203,7 @@
                     android:layout_weight="1"
                     android:layout_marginBottom="2dp"
                     android:layout_marginRight="2dp"
-                    android:textColor="#fff"
-                    android:background="#494949" />
+                    style="@style/holoNightly" />
 
                 <Button
                     android:text=")"
@@ -214,8 +212,7 @@
                     android:layout_weight="1"
                     android:layout_marginBottom="2dp"
                     android:layout_marginRight="2dp"
-                    android:textColor="#fff"
-                    android:background="#494949" />
+                    style="@style/holoNightly" />
 
             </LinearLayout>
 
@@ -233,8 +230,7 @@
                     android:layout_weight="1"
                     android:layout_marginBottom="2dp"
                     android:layout_marginRight="2dp"
-                    android:textColor="#fff"
-                    android:background="#494949" />
+                    style="@style/holoDark" />
 
                 <Button
                     android:text="5"
@@ -243,8 +239,7 @@
                     android:layout_weight="1"
                     android:layout_marginBottom="2dp"
                     android:layout_marginRight="2dp"
-                    android:textColor="#fff"
-                    android:background="#494949" />
+                    style="@style/holoDark" />
 
                 <Button
                     android:text="6"
@@ -253,8 +248,7 @@
                     android:layout_weight="1"
                     android:layout_marginBottom="2dp"
                     android:layout_marginRight="2dp"
-                    android:textColor="#fff"
-                    android:background="#494949" />
+                    style="@style/holoDark" />
 
                 <Button
                     android:text="X"
@@ -263,8 +257,7 @@
                     android:layout_weight="1"
                     android:layout_marginBottom="2dp"
                     android:layout_marginRight="2dp"
-                    android:textColor="#fff"
-                    android:background="#494949" />
+                    style="@style/holoNightly" />
 
                 <Button
                     android:text="("
@@ -273,8 +266,7 @@
                     android:layout_weight="1"
                     android:layout_marginBottom="2dp"
                     android:layout_marginRight="2dp"
-                    android:textColor="#fff"
-                    android:background="#494949" />
+                    style="@style/holoNightly" />
 
             </LinearLayout>
 
@@ -308,8 +300,7 @@
                             android:layout_weight="1"
                             android:layout_marginBottom="2dp"
                             android:layout_marginRight="2dp"
-                            android:textColor="#fff"
-                            android:background="#494949" />
+                            style="@style/holoDark" />
 
                         <Button
                             android:text="2"
@@ -318,8 +309,7 @@
                             android:layout_weight="1"
                             android:layout_marginBottom="2dp"
                             android:layout_marginRight="2dp"
-                            android:textColor="#fff"
-                            android:background="#494949" />
+                            style="@style/holoDark" />
 
                         <Button
                             android:text="3"
@@ -328,8 +318,7 @@
                             android:layout_weight="1"
                             android:layout_marginBottom="2dp"
                             android:layout_marginRight="2dp"
-                            android:textColor="#fff"
-                            android:background="#494949" />
+                            style="@style/holoDark" />
 
                         <Button
                             android:text="-"
@@ -338,8 +327,7 @@
                             android:layout_weight="1"
                             android:layout_marginBottom="2dp"
                             android:layout_marginRight="2dp"
-                            android:textColor="#fff"
-                            android:background="#494949" />
+                            style="@style/holoNightly" />
 
                     </LinearLayout>
                     <!-- standardKeyboardRowThree -->
@@ -351,23 +339,14 @@
                         android:layout_width="match_parent"
                         android:orientation="horizontal" >
 
-                        <LinearLayout
-                            android:id="@+id/button_zero"
-                            android:layout_height="wrap_content"
+                        <Button
+                            android:text="0"
                             android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="2dp"
                             android:layout_weight="2"
-                            android:orientation="horizontal" >
-
-                            <Button
-                                android:text="0"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginBottom="2dp"
-                                android:layout_marginRight="0dp"
-                                android:textColor="#fff"
-                                android:background="#494949" />
-
-                        </LinearLayout>
+                            android:layout_marginBottom="2dp"
+                            style="@style/holoDark" />
 
                         <Button
                             android:text="."
@@ -375,10 +354,9 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:layout_marginBottom="2dp"
+                            android:layout_marginRight="2dp"
                             android:layout_marginLeft="2dp"
-                            android:layout_marginRight="0dp"
-                            android:textColor="#fff"
-                            android:background="#494949" />
+                            style="@style/holoDark" />
 
                         <Button
                             android:text="+"
@@ -386,10 +364,8 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:layout_marginBottom="2dp"
-                            android:layout_marginLeft="2dp"
                             android:layout_marginRight="2dp"
-                            android:textColor="#fff"
-                            android:background="#494949" />
+                            style="@style/holoNightly" />
 
                     </LinearLayout>
                     <!-- standardKeyboardRowFour -->
@@ -410,8 +386,7 @@
                         android:layout_width="match_parent"
                         android:layout_marginRight="2dp"
                         android:layout_marginBottom="2dp"
-                        android:background="#494949"
-                        android:textColor="#fff" />
+                        style="@style/holoNightly" />
 
                 </LinearLayout>
 
@@ -421,4 +396,5 @@
         </LinearLayout>
 
     </LinearLayout>
+
 </LinearLayout>

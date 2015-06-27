@@ -1,8 +1,9 @@
 package net.chi6rag.android.androidcalculator;
 
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
-import android.util.Log;
+import android.view.ViewGroup;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -12,7 +13,10 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Calculator c = new Calculator();
-        Log.d("chi6rag", c.findValueInBraces("3+2"));
+        // Setup Custom Fonts
+        Typography typography = new Typography();
+        Typeface typeface = typography.importLocalFonts(this);
+        typography.setFontToChildren((ViewGroup) findViewById(R.id.calculator), typeface);
+
     }
 }

@@ -8,393 +8,184 @@
     android:orientation="vertical"
     android:background="#000" >
 
-    <!-- mainDisplay -->
     <LinearLayout
-        android:id="@+id/mainDisplay"
+        android:id="@+id/digitalDisplay"
         android:orientation="horizontal"
         android:layout_height="0dp"
         android:layout_width="match_parent"
-        android:layout_weight="3"
-        android:background="#000" >
-
-        <EditText
-            android:layout_height="wrap_content"
-            android:layout_width="0dp"
-            android:layout_gravity="center"
-            android:layout_weight="14" />
-
-        <Button
-            android:text="x"
-            android:layout_height="match_parent"
-            android:layout_width="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="1" />
-
+        android:layout_weight="1"
+        android:background="#47565A">
     </LinearLayout>
-    <!-- mainDisplay -->
 
     <LinearLayout
         android:id="@+id/keyboard"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:layout_height="0dp"
         android:layout_width="match_parent"
-        android:layout_weight="7"
-        android:background="#000"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        android:layout_marginBottom="30dp" >
+        android:layout_weight="3"
+        android:background="#47565A">
 
-        <!-- scientificKeyboardOne-->
         <LinearLayout
-            android:id="@+id/scientificKeyboardOne"
-            android:layout_height="match_parent"
-            android:layout_width="0dp"
-            android:layout_weight="5"
-            android:orientation="vertical"
-            android:layout_marginRight="2dp" >
+            android:id="@+id/rowOne"
+            android:orientation="horizontal"
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1" >
 
             <Button
-                android:text="sin"
+                android:id="@+id/buttonSeven"
+                android:text="7"
                 android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:layout_width="match_parent"
-                android:background="#272727"
-                android:layout_marginBottom="2dp"
-                android:textColor="#fff" />
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                style="@style/keyboardStandard" />
 
             <Button
-                android:text="cos"
+                android:id="@+id/buttonEight"
+                android:text="8"
                 android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:layout_width="match_parent"
-                android:background="#272727"
-                android:layout_marginBottom="2dp"
-                android:textColor="#fff" />
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                style="@style/keyboardStandard" />
 
             <Button
-                android:text="tan"
+                android:id="@+id/buttonNine"
+                android:text="9"
                 android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:layout_width="match_parent"
-                android:background="#272727"
-                android:layout_marginBottom="2dp"
-                android:textColor="#fff" />
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                style="@style/keyboardStandard" />
 
             <Button
-                android:text="pi"
+                android:id="@+id/buttonDivide"
+                android:text="÷"
                 android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:layout_width="match_parent"
-                android:background="#272727"
-                android:layout_marginBottom="2dp"
-                android:textColor="#fff" />
-
-            <Button
-                android:text="!"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:layout_width="match_parent"
-                android:background="#272727"
-                android:layout_marginBottom="2dp"
-                android:textColor="#fff" />
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                style="@style/keyboardSpecial" />
 
         </LinearLayout>
-        <!-- /scientificKeyboardOne -->
 
-        <!-- scientificKeyboardTwo -->
         <LinearLayout
-            android:id="@+id/scientificKeyboardTwo"
-            android:layout_height="match_parent"
-            android:layout_width="0dp"
-            android:layout_weight="5"
-            android:orientation="vertical"
-            android:layout_marginRight="30dp" >
+            android:id="@+id/rowTwo"
+            android:orientation="horizontal"
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1">
 
             <Button
-                android:text="ln"
+                android:id="@+id/buttonFour"
+                android:text="7"
                 android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:layout_width="match_parent"
-                android:background="#272727"
-                android:layout_marginBottom="2dp"
-                android:textColor="#fff" />
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                style="@style/keyboardStandard" />
 
             <Button
-                android:text="log"
+                android:id="@+id/buttonFive"
+                android:text="8"
                 android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:layout_width="match_parent"
-                android:background="#272727"
-                android:layout_marginBottom="2dp"
-                android:textColor="#fff" />
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                style="@style/keyboardStandard" />
 
             <Button
-                android:text="e"
+                android:id="@+id/buttonSix"
+                android:text="9"
                 android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:layout_width="match_parent"
-                android:background="#272727"
-                android:layout_marginBottom="2dp"
-                android:textColor="#fff" />
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                style="@style/keyboardStandard" />
 
             <Button
-                android:text="^"
+                android:id="@+id/buttonMultiply"
+                android:text="÷"
                 android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:layout_width="match_parent"
-                android:background="#272727"
-                android:layout_marginBottom="2dp"
-                android:textColor="#fff" />
-
-            <Button
-                android:text="sq-root"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:layout_width="match_parent"
-                android:background="#272727"
-                android:layout_marginBottom="2dp"
-                android:textColor="#fff" />
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                style="@style/keyboardSpecial" />
 
         </LinearLayout>
-        <!-- /scientificKeyboardTwo -->
 
         <LinearLayout
-            android:id="@+id/standardKeyboard"
-            android:layout_height="match_parent"
-            android:layout_width="0dp"
-            android:layout_weight="21"
-            android:orientation="vertical">
+            android:id="@+id/rowThree"
+            android:orientation="horizontal"
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1">
 
-            <LinearLayout
-                android:id="@+id/standardKeyboardRowOne"
-                android:layout_height="0dp"
+            <Button
+                android:id="@+id/buttonOne"
+                android:text="7"
                 android:layout_weight="1"
-                android:layout_width="match_parent"
-                android:orientation="horizontal">
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                style="@style/keyboardStandard" />
 
-                <Button
-                    android:text="7"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:layout_marginBottom="2dp"
-                    android:layout_marginRight="2dp"
-                    style="@style/holoDark" />
-
-                <Button
-                    android:text="8"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:layout_marginBottom="2dp"
-                    android:layout_marginRight="2dp"
-                    style="@style/holoDark" />
-
-                <Button
-                    android:text="9"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:layout_marginBottom="2dp"
-                    android:layout_marginRight="2dp"
-                    style="@style/holoDark" />
-
-                <Button
-                    android:text="÷"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:layout_marginBottom="2dp"
-                    android:layout_marginRight="2dp"
-                    style="@style/holoNightly" />
-
-                <Button
-                    android:text=")"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:layout_marginBottom="2dp"
-                    android:layout_marginRight="2dp"
-                    style="@style/holoNightly" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/standardKeyboardRowTwo"
-                android:layout_height="0dp"
+            <Button
+                android:id="@+id/buttonTwo"
+                android:text="8"
                 android:layout_weight="1"
-                android:layout_width="match_parent"
-                android:orientation="horizontal">
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                style="@style/keyboardStandard" />
 
-                <Button
-                    android:text="4"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:layout_marginBottom="2dp"
-                    android:layout_marginRight="2dp"
-                    style="@style/holoDark" />
+            <Button
+                android:id="@+id/buttonThree"
+                android:text="9"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                style="@style/keyboardStandard" />
 
-                <Button
-                    android:text="5"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:layout_marginBottom="2dp"
-                    android:layout_marginRight="2dp"
-                    style="@style/holoDark" />
+            <Button
+                android:id="@+id/buttonMinus"
+                android:text="÷"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                style="@style/keyboardSpecial" />
 
-                <Button
-                    android:text="6"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:layout_marginBottom="2dp"
-                    android:layout_marginRight="2dp"
-                    style="@style/holoDark" />
+        </LinearLayout>
 
-                <Button
-                    android:text="X"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:layout_marginBottom="2dp"
-                    android:layout_marginRight="2dp"
-                    style="@style/holoNightly" />
+        <LinearLayout
+            android:id="@+id/rowFour"
+            android:orientation="horizontal"
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1">
 
-                <Button
-                    android:text="("
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:layout_marginBottom="2dp"
-                    android:layout_marginRight="2dp"
-                    style="@style/holoNightly" />
+            <Button
+                android:id="@+id/buttonZero"
+                android:text="7"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                style="@style/keyboardStandard" />
 
-            </LinearLayout>
+            <Button
+                android:id="@+id/buttonComma"
+                android:text="8"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                style="@style/keyboardStandard" />
 
-            <!-- standardKeyboard_RowThreeFourWrapper -->
-            <LinearLayout
-                android:id="@+id/standardKeyboard_RowThreeFourWrapper"
-                android:layout_height="0dp"
-                android:layout_weight="2"
-                android:layout_width="match_parent"
-                android:orientation="horizontal" >
+            <Button
+                android:id="@+id/buttonEquals"
+                android:text="9"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                style="@style/keyboardSpecial" />
 
-                <!-- standardKeyboardRowThreeFour -->
-                <LinearLayout
-                    android:id="@+id/standardKeyboardRowThreeFour"
-                    android:layout_height="match_parent"
-                    android:layout_width="0dp"
-                    android:layout_weight="4"
-                    android:orientation="vertical" >
-
-                    <!-- standardKeyboardRowThree -->
-                    <LinearLayout
-                        android:id="@+id/standardKeyboardRowThree"
-                        android:layout_height="wrap_content"
-                        android:layout_width="match_parent"
-                        android:orientation="horizontal" >
-
-                        <Button
-                            android:text="1"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:layout_marginBottom="2dp"
-                            android:layout_marginRight="2dp"
-                            style="@style/holoDark" />
-
-                        <Button
-                            android:text="2"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:layout_marginBottom="2dp"
-                            android:layout_marginRight="2dp"
-                            style="@style/holoDark" />
-
-                        <Button
-                            android:text="3"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:layout_marginBottom="2dp"
-                            android:layout_marginRight="2dp"
-                            style="@style/holoDark" />
-
-                        <Button
-                            android:text="-"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:layout_marginBottom="2dp"
-                            android:layout_marginRight="2dp"
-                            style="@style/holoNightly" />
-
-                    </LinearLayout>
-                    <!-- standardKeyboardRowThree -->
-
-                    <!-- standardKeyboardRowFour -->
-                    <LinearLayout
-                        android:id="@+id/standardKeyboardRowFour"
-                        android:layout_height="wrap_content"
-                        android:layout_width="match_parent"
-                        android:orientation="horizontal" >
-
-                        <Button
-                            android:text="0"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:drawablePadding="2dp"
-                            android:layout_weight="2"
-                            android:layout_marginBottom="2dp"
-                            style="@style/holoDark" />
-
-                        <Button
-                            android:text="."
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:layout_marginBottom="2dp"
-                            android:layout_marginRight="2dp"
-                            android:layout_marginLeft="2dp"
-                            style="@style/holoDark" />
-
-                        <Button
-                            android:text="+"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:layout_marginBottom="2dp"
-                            android:layout_marginRight="2dp"
-                            style="@style/holoNightly" />
-
-                    </LinearLayout>
-                    <!-- standardKeyboardRowFour -->
-
-                </LinearLayout>
-                <!-- standardKeyboardRowThreeFour -->
-
-                <LinearLayout
-                    android:id="@+id/equals_to_wrapper"
-                    android:layout_height="match_parent"
-                    android:layout_width="0dp"
-                    android:layout_weight="1" >
-
-                    <Button
-                        android:text="="
-                        android:id="@+id/button_equals_to"
-                        android:layout_height="match_parent"
-                        android:layout_width="match_parent"
-                        android:layout_marginRight="2dp"
-                        android:layout_marginBottom="2dp"
-                        style="@style/holoNightly" />
-
-                </LinearLayout>
-
-            </LinearLayout>
-            <!-- /standardKeyboard_RowThreeFourWrapper -->
+            <Button
+                android:id="@+id/buttonPlus"
+                android:text="÷"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                style="@style/keyboardSpecial" />
 
         </LinearLayout>
 

@@ -1,8 +1,8 @@
 package net.chi6rag.android.androidcalculator;
 
 import java.util.ArrayList;
-        import java.util.Collections;
-        import java.util.List;
+import java.util.Collections;
+import java.util.List;
 
 public class Calculator {
 
@@ -11,14 +11,18 @@ public class Calculator {
 
     public static String findValueInBraces(String finalStr) {
 
-        while (finalStr.contains("(") && finalStr.contains(")")) {
-            int fIndex = finalStr.indexOf("(");
-            int nIndex = finalStr.indexOf(")");
-            String subString = finalStr.substring(fIndex + 1, nIndex);
-            finalStr = finalStr.substring(0, fIndex)
-                    + calculate(subString)
-                    + finalStr.substring(nIndex + 1,
-                    finalStr.length());
+        try{
+            while (finalStr.contains("(") && finalStr.contains(")")) {
+                int fIndex = finalStr.indexOf("(");
+                int nIndex = finalStr.indexOf(")");
+                String subString = finalStr.substring(fIndex + 1, nIndex);
+                finalStr = finalStr.substring(0, fIndex)
+                        + calculate(subString)
+                        + finalStr.substring(nIndex + 1,
+                        finalStr.length());
+            }
+        }catch(Exception e){
+            finalStr = "Invalid Input";
         }
         return calculate(finalStr);
 
@@ -26,20 +30,25 @@ public class Calculator {
 
     public static String calculate(String finalString) {
 
-        while (finalString.contains("(") && finalString.contains(")")) {
-            findValueInBraces(finalString);
-        }
-        while (!isNum(finalString)) {
-            List<Integer> positions = getOperandPosition(finalString);
-            int pos = positions.get(0);
-            if (positions.size() >= 2 && positions.get(1) != null) {
-                int nxtPos = positions.get(1);
-                finalString = getValue(finalString.substring(0, nxtPos), pos)
-                        + finalString.substring(nxtPos, finalString.length());
-            } else {
-                finalString = getValue(
-                        finalString.substring(0, finalString.length()), pos);
+        try {
+            while (finalString.contains("(") && finalString.contains(")")) {
+                findValueInBraces(finalString);
             }
+            while (!isNum(finalString)) {
+                List<Integer> positions = getOperandPosition(finalString);
+                int pos = positions.get(0);
+                if (positions.size() >= 2 && positions.get(1) != null) {
+                    int nxtPos = positions.get(1);
+                    finalString = getValue(finalString.substring(0, nxtPos), pos)
+                            + finalString.substring(nxtPos, finalString.length());
+                } else {
+                    finalString = getValue(
+                            finalString.substring(0, finalString.length()), pos);
+                }
+            }
+        }
+        catch(Exception e){
+            finalString = "Invalid Input";
         }
         return finalString;
 

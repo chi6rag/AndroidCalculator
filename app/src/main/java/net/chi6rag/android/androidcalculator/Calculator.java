@@ -9,6 +9,8 @@ public class Calculator {
     public Calculator() {
     }
 
+    public void pun(){}
+
     public static String findValueInBraces(String finalStr) {
 
         try{

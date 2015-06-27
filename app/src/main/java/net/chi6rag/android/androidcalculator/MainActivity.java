@@ -12,6 +12,7 @@ import android.widget.TextView;
 
 public class MainActivity extends ActionBarActivity implements OnClickListener{
 
+    static Boolean state = false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,61 +24,67 @@ public class MainActivity extends ActionBarActivity implements OnClickListener{
         typography.setFontToChildren((ViewGroup) findViewById(R.id.calculator), typeface);
 
         // Calculator
-        Calculator c = new Calculator();
-        Log.d("chi6rag", c.findValueInBraces("2+3/Indbfj{chirg}"));
         setOnClickListnerToChildTextViews((ViewGroup) findViewById(R.id.calculator));
     }
 
     @Override
     public void onClick(View v) {
+        TextView digitalDisplayText = (TextView) findViewById(R.id.digitalDisplayText);
+        if(digitalDisplayText.getText().toString().equals("0")){
+            digitalDisplayText.setText("");
+        }
         switch(v.getId()){
             case R.id.buttonSeven:
-                Log.d("chi6rag", "Seven");
+                digitalDisplayText.append("7");
                 break;
             case R.id.buttonEight:
-                Log.d("chi6rag", "Eight");
+                digitalDisplayText.append("8");
                 break;
             case R.id.buttonNine:
-                Log.d("chi6rag", "Nine");
+                digitalDisplayText.append("9");
                 break;
             case R.id.buttonDivide:
-                Log.d("chi6rag", "Divide");
+                digitalDisplayText.append(" ÷ ");
                 break;
             case R.id.buttonFour:
-                Log.d("chi6rag", "Four");
+                digitalDisplayText.append("4");
                 break;
             case R.id.buttonFive:
-                Log.d("chi6rag", "Five");
+                digitalDisplayText.append("5");
                 break;
             case R.id.buttonSix:
-                Log.d("chi6rag", "Six");
+                digitalDisplayText.append("6");
                 break;
             case R.id.buttonMultiply:
-                Log.d("chi6rag", "Multiply");
+                digitalDisplayText.append(" x ");
                 break;
             case R.id.buttonOne:
-                Log.d("chi6rag", "One");
+                digitalDisplayText.append("1");
                 break;
             case R.id.buttonTwo:
-                Log.d("chi6rag", "Two");
+                digitalDisplayText.append("2");
                 break;
             case R.id.buttonThree:
-                Log.d("chi6rag", "Three");
+                digitalDisplayText.append("3");
                 break;
             case R.id.buttonMinus:
-                Log.d("chi6rag", "Minus");
+                digitalDisplayText.append(" - ");
                 break;
             case R.id.buttonZero:
-                Log.d("chi6rag", "Zero");
+                digitalDisplayText.append("0");
                 break;
-            case R.id.buttonComma:
-                Log.d("chi6rag", "Comma");
+            case R.id.buttonDot:
+                digitalDisplayText.append(".");
                 break;
             case R.id.buttonEquals:
-                Log.d("chi6rag", "Equals");
+                Calculator calculator = new Calculator();
+                String expression = digitalDisplayText.getText().toString();
+                String result = calculator.findValueInBraces("1+2");
+                Log.d("chi6rag", result);
+                digitalDisplayText.setText(result);
                 break;
             case R.id.buttonPlus:
-                Log.d("chi6rag", "Plus");
+                digitalDisplayText.append(" + ");
                 break;
         }
     }
@@ -95,4 +102,5 @@ public class MainActivity extends ActionBarActivity implements OnClickListener{
             }
         }
     }
+
 }

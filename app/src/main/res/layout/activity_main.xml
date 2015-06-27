@@ -15,6 +15,14 @@
         android:layout_width="match_parent"
         android:layout_weight="1"
         style="@style/digitalDisplay">
+
+        <TextView
+            android:id="@+id/digitalDisplayText"
+            android:text="0"
+            android:textColor="#FFF"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"/>
+
     </LinearLayout>
 
     <LinearLayout
@@ -164,7 +172,7 @@
                 style="@style/keyboardStandard" />
 
             <Button
-                android:id="@+id/buttonComma"
+                android:id="@+id/buttonDot"
                 android:text=","
                 android:layout_weight="1"
                 android:layout_height="match_parent"

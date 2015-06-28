@@ -8,9 +8,8 @@
     android:orientation="vertical"
     android:background="#000" >
 
-    <LinearLayout
+    <RelativeLayout
         android:id="@+id/digitalDisplay"
-        android:orientation="horizontal"
         android:layout_height="0dp"
         android:layout_width="match_parent"
         android:layout_weight="1"
@@ -19,12 +18,11 @@
         <TextView
             android:id="@+id/digitalDisplayText"
             android:text="0"
-            android:textColor="#FFF"
-            android:layout_height="match_parent"
-            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
             style="@style/digitalDisplayText"/>
 
-    </LinearLayout>
+    </RelativeLayout>
 
     <LinearLayout
         android:id="@+id/keyboard"

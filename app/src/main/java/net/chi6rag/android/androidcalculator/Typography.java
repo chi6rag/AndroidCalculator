@@ -11,8 +11,11 @@ import android.widget.TextView;
  */
 public class Typography {
 
-    public Typeface importLocalFonts(Context c){
-        return getRobotoThin(c);
+    public Object[] importLocalFonts(Context c){
+        Object[] localFonts = new Object[2];
+        localFonts[0] = getRobotoThin(c);
+        localFonts[1] = getRobotoMedium(c);
+        return localFonts;
     }
 
     public void setFontToChildren(ViewGroup myParentlayout, Typeface typeFace){
@@ -30,6 +33,10 @@ public class Typography {
 
     private Typeface getRobotoThin(Context c){
         return Typeface.createFromAsset(c.getAssets(), "fonts/Roboto-Thin.ttf");
+    }
+
+    private Typeface getRobotoMedium(Context c){
+        return Typeface.createFromAsset(c.getAssets(), "fonts/Roboto-Medium.ttf");
     }
 
 }

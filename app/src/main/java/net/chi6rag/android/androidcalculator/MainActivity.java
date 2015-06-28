@@ -20,8 +20,12 @@ public class MainActivity extends ActionBarActivity implements OnClickListener{
 
         // Setup Custom Fonts
         Typography typography = new Typography();
-        Typeface typeface = typography.importLocalFonts(this);
-        typography.setFontToChildren((ViewGroup) findViewById(R.id.calculator), typeface);
+        Typeface typefaceRobotoThin = (Typeface) (typography.importLocalFonts(this)[0]);
+        Typeface typefaceRobotoMedium = (Typeface) (typography.importLocalFonts(this)[1]);
+        typography.setFontToChildren((ViewGroup) findViewById(R.id.calculator),
+                typefaceRobotoThin);
+        typography.setFontToChildren( (ViewGroup) findViewById(R.id.digitalDisplay),
+                typefaceRobotoMedium);
 
         // Calculator
         setOnClickListnerToChildTextViews((ViewGroup) findViewById(R.id.calculator));

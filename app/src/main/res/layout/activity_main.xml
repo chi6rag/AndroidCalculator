@@ -21,7 +21,8 @@
             android:text="0"
             android:textColor="#FFF"
             android:layout_height="match_parent"
-            android:layout_width="match_parent"/>
+            android:layout_width="match_parent"
+            style="@style/digitalDisplayText"/>
 
     </LinearLayout>
 
@@ -173,7 +174,7 @@
 
             <Button
                 android:id="@+id/buttonDot"
-                android:text=","
+                android:text="."
                 android:layout_weight="1"
                 android:layout_height="match_parent"
                 android:layout_width="0dp"

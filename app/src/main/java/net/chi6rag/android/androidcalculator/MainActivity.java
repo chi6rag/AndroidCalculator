@@ -44,7 +44,7 @@ public class MainActivity extends ActionBarActivity implements OnClickListener{
                 digitalDisplayText.append("9");
                 break;
             case R.id.buttonDivide:
-                digitalDisplayText.append(" ÷ ");
+                digitalDisplayText.append(" / ");
                 break;
             case R.id.buttonFour:
                 digitalDisplayText.append("4");
@@ -56,7 +56,7 @@ public class MainActivity extends ActionBarActivity implements OnClickListener{
                 digitalDisplayText.append("6");
                 break;
             case R.id.buttonMultiply:
-                digitalDisplayText.append(" x ");
+                digitalDisplayText.append(" * ");
                 break;
             case R.id.buttonOne:
                 digitalDisplayText.append("1");
@@ -79,8 +79,9 @@ public class MainActivity extends ActionBarActivity implements OnClickListener{
             case R.id.buttonEquals:
                 Calculator calculator = new Calculator();
                 String expression = digitalDisplayText.getText().toString();
-                String result = calculator.findValueInBraces("1+2");
-                Log.d("chi6rag", result);
+                Log.d("chi6rag", "Expression: " + expression);
+                String result = calculator.findValueInBraces(expression);
+                Log.d("chi6rag", "Result: " + result);
                 digitalDisplayText.setText(result);
                 break;
             case R.id.buttonPlus:

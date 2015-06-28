@@ -16,6 +16,13 @@
         style="@style/digitalDisplay">
 
         <TextView
+            android:id="@+id/clearScreen"
+            android:text="c"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            style="@style/digitalDisplayClearScreen"/>
+
+        <TextView
             android:id="@+id/digitalDisplayText"
             android:text="0"
             android:layout_height="wrap_content"

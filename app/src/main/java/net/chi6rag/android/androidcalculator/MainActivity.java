@@ -12,7 +12,6 @@ import android.widget.TextView;
 
 public class MainActivity extends ActionBarActivity implements OnClickListener{
 
-    static Boolean state = false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,7 +23,7 @@ public class MainActivity extends ActionBarActivity implements OnClickListener{
         Typeface typefaceRobotoMedium = (Typeface) (typography.importLocalFonts(this)[1]);
         typography.setFontToChildren((ViewGroup) findViewById(R.id.calculator),
                 typefaceRobotoThin);
-        typography.setFontToChildren( (ViewGroup) findViewById(R.id.digitalDisplay),
+        typography.setFontToChildren( (ViewGroup)findViewById(R.id.digitalDisplay),
                 typefaceRobotoMedium);
 
         // Calculator
@@ -90,6 +89,9 @@ public class MainActivity extends ActionBarActivity implements OnClickListener{
                 break;
             case R.id.buttonPlus:
                 digitalDisplayText.append(" + ");
+                break;
+            case R.id.clearScreen:
+                digitalDisplayText.setText("0");
                 break;
         }
     }
